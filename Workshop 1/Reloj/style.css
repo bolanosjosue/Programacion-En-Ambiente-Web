@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    margin: 0px;
+}
+h2{
+    width: 20px;
+    height: 30px;
+    border: 2px solid black;
+}
