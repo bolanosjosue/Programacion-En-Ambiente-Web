@@ -1,0 +1,183 @@
+CRITICAL - 2023-12-11 17:20:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\portada_publica.php on line 33.
+ 1 APPPATH\Views\portada_publica.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\portada_publica.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\portada_publica.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('portada_publica', [], true)
+ 5 APPPATH\Controllers\YourNews.php(105): view('portada_publica', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:20:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\your_unique_news.php on line 76.
+ 1 APPPATH\Views\your_unique_news.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 76)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:20:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\your_unique_news.php on line 76.
+ 1 APPPATH\Views\your_unique_news.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 76)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:31:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\portada_publica.php on line 76.
+ 1 APPPATH\Views\portada_publica.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\portada_publica.php', 76)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\portada_publica.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('portada_publica', [], true)
+ 5 APPPATH\Controllers\YourNews.php(103): view('portada_publica', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josue', 'U', '208560074')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:38:34 --> Call to undefined method App\Models\User::getPublicaValue
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\YourNews.php(69): CodeIgniter\Model->__call('getPublicaValue', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josue', 'U', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:38:48 --> Call to undefined method App\Models\User::getPublicaValue
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\YourNews.php(69): CodeIgniter\Model->__call('getPublicaValue', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josue', 'U', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:38:49 --> Call to undefined method App\Models\User::getPublicaValue
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\YourNews.php(69): CodeIgniter\Model->__call('getPublicaValue', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josue', 'U', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 17:39:04 --> Call to undefined method App\Models\User::getPublicaValue
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\YourNews.php(69): CodeIgniter\Model->__call('getPublicaValue', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josue', 'U', '2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:39:41 --> Undefined array key "user_name"
+in APPPATH\Views\your_unique_news.php on line 49.
+ 1 APPPATH\Views\your_unique_news.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:39:47 --> Too few arguments to function App\Controllers\YourNews::portadaPublica(), 0 passed in C:\xampp\htdocs\code\system\CodeIgniter.php on line 942 and exactly 3 expected
+in APPPATH\Controllers\YourNews.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:41:11 --> Too few arguments to function App\Controllers\YourNews::portadaPublica(), 0 passed in C:\xampp\htdocs\code\system\CodeIgniter.php on line 942 and exactly 3 expected
+in APPPATH\Controllers\YourNews.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:41:39 --> Undefined array key "user_name"
+in APPPATH\Views\your_unique_news.php on line 50.
+ 1 APPPATH\Views\your_unique_news.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:41:40 --> Undefined array key "user_name"
+in APPPATH\Views\your_unique_news.php on line 50.
+ 1 APPPATH\Views\your_unique_news.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 18:47:16 --> Undefined array key "user_name"
+in APPPATH\Views\your_unique_news.php on line 50.
+ 1 APPPATH\Views\your_unique_news.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_name"', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 19:33:00 --> Invalid file: "portada_privada.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_privada.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('portada_privada', [], true)
+ 3 APPPATH\Controllers\YourNews.php(106): view('portada_privada')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josué', 'U', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 19:35:54 --> Too few arguments to function App\Controllers\YourNews::portadaPublica(), 0 passed in C:\xampp\htdocs\code\system\CodeIgniter.php on line 942 and exactly 3 expected
+in APPPATH\Controllers\YourNews.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 19:36:38 --> Invalid file: "portada_privada .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_privada .php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('portada_privada ', [], true)
+ 3 APPPATH\Controllers\YourNews.php(106): view('portada_privada ')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josué', 'U', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 19:36:56 --> Invalid file: "portada_privada.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('portada_privada.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('portada_privada', [], true)
+ 3 APPPATH\Controllers\YourNews.php(106): view('portada_privada')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->portadaPublica('Josué', 'U', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 21:39:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\your_unique_news.php on line 89.
+ 1 APPPATH\Views\your_unique_news.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 89)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 21:39:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\your_unique_news.php on line 89.
+ 1 APPPATH\Views\your_unique_news.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php', 89)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\code\\app\\Views\\your_unique_news.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('your_unique_news', [], true)
+ 5 APPPATH\Controllers\YourNews.php(59): view('your_unique_news', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\YourNews->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\YourNews))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

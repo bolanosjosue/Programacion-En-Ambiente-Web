@@ -1,0 +1,177 @@
+CRITICAL - 2023-12-07 03:50:49 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 742.
+ 1 SYSTEMPATH\Email\Email.php(742): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(555): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Users.php(45): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 03:55:12 --> mysqli_sql_exception: Duplicate entry '12345' for key 'PRIMARY' in C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\code\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\code\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\code\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\code\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\code\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\code\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\code\app\Models\User.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\code\app\Controllers\Users.php(41): App\Models\User->insertUser('12345', 'Josu\xC3\xA9', 'U', 'josuebolanos200...', '$2y$10$SA4HJQjv...', '100 metros nore...', 'Casa rosada con...', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+#9 C:\xampp\htdocs\code\system\CodeIgniter.php(942): App\Controllers\Users->insertar()
+#10 C:\xampp\htdocs\code\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\code\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\code\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-07 03:55:12 --> Duplicate entry '12345' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `first_name`, `last_name`, `email_address`, `password`, `address`, `address2`, `country`, `city`, `postal_code`, `phone_number`, `role_id`) VALUES (:id:, :first_name:, :last_name:, :email_address:, :password:, :address:, :address2:, :country:, :city:, :postal_code:, :phone_number:, :role_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\User.php(43): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Users.php(41): App\Models\User->insertUser('12345', 'Josué', 'U', 'josuebolanos2004@gmail.com', '$2y$10$SA4HJQjvm1YWb6Zq6RwdrurcZoE.PfFgH4PBPeQ4zCFwXxg7mT7H6', '100 metros noreste del super carlos', 'Casa rosada con amapola en frente', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 04:51:31 --> mysqli_sql_exception: Duplicate entry '12345' for key 'PRIMARY' in C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\code\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\code\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\code\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\code\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\code\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\code\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\code\app\Models\User.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\code\app\Controllers\Users.php(42): App\Models\User->insertUser('12345', 'Josu\xC3\xA9', 'U', 'josuebolanos200...', '$2y$10$seQdhiKW...', '100 metros nore...', 'Casa rosada con...', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+#9 C:\xampp\htdocs\code\system\CodeIgniter.php(942): App\Controllers\Users->insertar()
+#10 C:\xampp\htdocs\code\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\code\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\code\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-07 04:51:31 --> Duplicate entry '12345' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `first_name`, `last_name`, `email_address`, `password`, `address`, `address2`, `country`, `city`, `postal_code`, `phone_number`, `role_id`) VALUES (:id:, :first_name:, :last_name:, :email_address:, :password:, :address:, :address2:, :country:, :city:, :postal_code:, :phone_number:, :role_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\User.php(43): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Users.php(42): App\Models\User->insertUser('12345', 'Josué', 'U', 'josuebolanos2004@gmail.com', '$2y$10$seQdhiKWOexyAxADPYO1fea/53y/USgwEGLqnoRuVP1Kcpm9K2jBu', '100 metros noreste del super carlos', 'Casa rosada con amapola en frente', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 04:52:29 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\Users.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\code\\app\\Controllers\\Users.php', 74)
+ 2 APPPATH\Controllers\Users.php(74): mail('josuebolanos2004@gmail.com', 'Email de Registro', '
+        <html>
+            <head>
+                <title>Prueba de correo</title>
+            </head>
+
+            <body>
+                <h1>Email de: Josué</h1>
+                <p>Prueba de correo electronico de registro</p>
+            </body>
+        </html>
+        ', 'MIME-Version: 1.0
+Content-type: text/html; charset=uft-8
+From: Josué <josuebolanos2004@gmail.com>
+Return-path: josuebolanos2004@gmail.com
+')
+ 3 APPPATH\Controllers\Users.php(44): App\Controllers\Users->sendConfirmationEmail('josuebolanos2004@gmail.com', 'Josué')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 04:58:33 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\Users.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\code\\app\\Controllers\\Users.php', 74)
+ 2 APPPATH\Controllers\Users.php(74): mail('josuebolanos2004@gmail.com', 'Email de Registro', '
+        <html>
+            <head>
+                <title>Prueba de correo</title>
+            </head>
+
+            <body>
+                <h1>Email de: Josué</h1>
+                <p>Prueba de correo electronico de registro</p>
+            </body>
+        </html>
+        ', 'MIME-Version: 1.0
+Content-type: text/html; charset=uft-8
+From: Josué <josuedavidbolanos2004@gmail.com>
+Return-path: josuebolanos2004@gmail.com
+')
+ 3 APPPATH\Controllers\Users.php(44): App\Controllers\Users->sendConfirmationEmail('josuedavidbolanos2004@gmail.com', 'Josué')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 05:05:10 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\Users.php on line 68.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\code\\app\\Controllers\\Users.php', 68)
+ 2 APPPATH\Controllers\Users.php(68): mail('josue1bolanos2004@gmail.com', 'Asunto del correo', 'Este es el cuerpo del correo. La dirección del remitente es: josue1bolanos2004@gmail.com', 'MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: <josuebolanos2004@gmail.com>
+')
+ 3 APPPATH\Controllers\Users.php(44): App\Controllers\Users->sendConfirmationEmail('josue1bolanos2004@gmail.com', 'Josué')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 05:06:01 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\Users.php on line 68.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\code\\app\\Controllers\\Users.php', 68)
+ 2 APPPATH\Controllers\Users.php(68): mail('josuedavidbolanos2004@gmail.com', 'Asunto del correo', 'Este es el cuerpo del correo. La dirección del remitente es: josuedavidbolanos2004@gmail.com', 'MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: <josuebolanos2004@gmail.com>
+')
+ 3 APPPATH\Controllers\Users.php(44): App\Controllers\Users->sendConfirmationEmail('josuedavidbolanos2004@gmail.com', 'Josue')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-07 05:08:45 --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+in APPPATH\Controllers\Users.php on line 68.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\code\\app\\Controllers\\Users.php', 68)
+ 2 APPPATH\Controllers\Users.php(68): mail('josuedavidbolanos2004@gmail.com', 'Asunto del correo', 'Este es el cuerpo del correo. La dirección del remitente es: josuedavidbolanos2004@gmail.com', 'MIME-Version: 1.0
+Content-type:text/html;charset=UTF-8
+From: <josuebolanos2004@gmail.com>
+')
+ 3 APPPATH\Controllers\Users.php(44): App\Controllers\Users->sendConfirmationEmail('josuedavidbolanos2004@gmail.com', 'Josué')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-07 05:14:23 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\code\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\code\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\code\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\code\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\code\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\code\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\code\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\code\app\Models\User.php(43): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\code\app\Controllers\Users.php(42): App\Models\User->insertUser('1234523123213', 'Josu\xC3\xA9', 'U', 'josue1bolanos20...', '$2y$10$xVNKCu0g...', '100 metros nore...', 'Casa rosada con...', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+#9 C:\xampp\htdocs\code\system\CodeIgniter.php(942): App\Controllers\Users->insertar()
+#10 C:\xampp\htdocs\code\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\code\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\code\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-07 05:14:23 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `first_name`, `last_name`, `email_address`, `password`, `address`, `address2`, `country`, `city`, `postal_code`, `phone_number`, `role_id`) VALUES (:id:, :first_name:, :last_name:, :email_address:, :password:, :address:, :address2:, :country:, :city:, :postal_code:, :phone_number:, :role_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\User.php(43): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Users.php(42): App\Models\User->insertUser('1234523123213', 'Josué', 'U', 'josue1bolanos2004@gmail.com', '$2y$10$xVNKCu0grnUyca18pUns..IWc72z5vwXj8R4B1vvjkRHox.nE8MIe', '100 metros noreste del super carlos', 'Casa rosada con amapola en frente', 'Costa Rica', 'Ciudad Quesada', '21010', '84440540', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Users->insertar()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
